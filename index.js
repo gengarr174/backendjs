@@ -127,6 +127,7 @@ if(media >= 7){
 */
 
 
+/*
 let numero;
 function numb(numero) {
     if ( numero >= 1 ) return `o numero ${numero} é positivo`;
@@ -157,3 +158,36 @@ let isagi = () => {
     }
 }
 //
+*/
+
+
+function colectNums() {
+    let num1 = Number(prompt("digite um numero", ""));
+    let num2 = Number(prompt("digite outro numero", ""));
+};
+
+function blackOps() {
+    let operacion = ['subtracao', 'adicao', 'multiplicacao', 'divisao']
+    let ope = prompt(`qual operacion voce deseja fazer?`, `${operacion}`);
+    function opes() {
+        switch(ope) {
+            case operacion.indexOf[0]:
+                alert(num1 - num2);
+                break;
+            case operacion.indexOf[1]:
+                alert(num1 + num2);
+                break;
+            case operacion.indexOf[2]:
+                alert(num1 * num2);
+                break;
+            case operacion.indexOf[3]:
+                alert(num1 / num2);
+                break;
+            default:
+                console.log(a);
+        };
+    };
+};
+
+colectNums();
+blackOps();
