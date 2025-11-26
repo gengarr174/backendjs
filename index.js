@@ -161,33 +161,66 @@ let isagi = () => {
 */
 
 
-function colectNums() {
+
+
+/*
+function blackOps() {
     let num1 = Number(prompt("digite um numero", ""));
     let num2 = Number(prompt("digite outro numero", ""));
-};
-
-function blackOps() {
     let operacion = ['subtracao', 'adicao', 'multiplicacao', 'divisao']
-    let ope = prompt(`qual operacion voce deseja fazer?`, `${operacion}`);
-    function opes() {
+    let ope = Number(prompt(`qual operacion voce deseja fazer? ${operacion}`));
         switch(ope) {
-            case operacion.indexOf[0]:
-                alert(num1 - num2);
-                break;
-            case operacion.indexOf[1]:
-                alert(num1 + num2);
-                break;
-            case operacion.indexOf[2]:
-                alert(num1 * num2);
-                break;
-            case operacion.indexOf[3]:
-                alert(num1 / num2);
-                break;
-            default:
-                console.log(a);
-        };
+        case 1:
+            alert(num1 - num2);
+            break;
+        case 2:
+            alert(num1 + num2);
+            break;
+        case 3:
+            alert(num1 * num2);
+            break;
+        case 4:
+            alert(num1 / num2);
+            break;
+        default:
+            console.log('a');      
     };
 };
-
-colectNums();
 blackOps();
+*/
+
+/*
+let nome = prompt("qual seu nome?", "");
+
+let saudac = function() {
+    console.log(`yo, ${nome}!`);
+};
+saudac();
+*/
+
+function criarContador(n) {
+    let valor = 0;
+    return function() {
+        //valor += n;
+        //console.log(valor)
+        return valor += n;
+    }
+}
+
+let ac1 = criarContador(2);
+let ac2 = criarContador(5);
+// ac1();
+// ac1();
+// ac1();
+// ac2();
+// ac2();
+console.log(ac1());
+console.log(ac1());
+console.log(ac1());
+console.log(ac2());
+console.log(ac2());
+
+
+function criarFiltro() {
+    
+}
