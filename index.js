@@ -224,3 +224,12 @@ console.log(ac2());
 function criarFiltro() {
     
 }
+
+
+total = 20;
+
+let i = (function() {
+    return total = 10 + 2;
+})();
+
+i(1, 3);
