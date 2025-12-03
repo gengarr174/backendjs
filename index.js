@@ -33,10 +33,11 @@ function atv1() {
 };
 
 atv1();
-*/
 
 
-/*
+
+
+
 let resposta = confirm("voce é user?")
 if(resposta) {
     alert("prossiga.");
@@ -52,10 +53,11 @@ user.name = prompt("qual seu nome?", "");
 let saudacoes = `olá! ${user.name}`;
 alert(saudacoes);
 console.log(resposta, saudacoes);
-*/
 
 
-/*
+
+
+
 let frase = "js is incrible";
 let nome = "jonas";
 let cidade = "ouro preto";
@@ -70,24 +72,25 @@ function methodss() {
     console.log(info);
 };
 methodss();
-*/
 
-/*
+
+
+
 let soma = () => {
     let num1 = Number(prompt("digite um numero", ""));
     let num2 = Number(prompt("digite outro", ""));
     console.log(num1 + num2);
 };
 soma();
-*/
 
 
-/*
+
+
 let keys = {
     nome,
     altura,
     idade,
-};
+
 
 function indi(keys) {
     keys[0] = a
@@ -100,12 +103,11 @@ function indi(keys) {
     console.log(a, b, c);
 };
 
-
 indi();
-*/
 
 
-/*
+
+
 let n1 = 5
 let n2 = 10
 let n3 = 6
@@ -124,10 +126,10 @@ if(media >= 7){
 
 //function voto(idade) {
 //    if ( idade >= 18 || idade <=69 )
-*/
 
 
-/*
+
+
 let numero;
 function numb(numero) {
     if ( numero >= 1 ) return `o numero ${numero} é positivo`;
@@ -151,19 +153,18 @@ console.log(grupo(3));
 
 
 
-//
+
 let isagi = () => {
     let meta = {
 
     }
 }
-//
-*/
 
 
 
 
-/*
+
+
 function blackOps() {
     let num1 = Number(prompt("digite um numero", ""));
     let num2 = Number(prompt("digite outro numero", ""));
@@ -187,16 +188,20 @@ function blackOps() {
     };
 };
 blackOps();
-*/
 
-/*
+
+
+
+
 let nome = prompt("qual seu nome?", "");
 
 let saudac = function() {
     console.log(`yo, ${nome}!`);
 };
 saudac();
-*/
+
+
+
 
 function criarContador(n) {
     let valor = 0;
@@ -219,17 +224,55 @@ console.log(ac1());
 console.log(ac1());
 console.log(ac2());
 console.log(ac2());
+*/
 
 
-function criarFiltro() {
-    
+
+/*
+function add() {
+    const lista = [];
+    const qtd = Number(prompt('Quantos itens deseja adicionar?'));
+    for(let i = 0; i < qtd; i++){
+        const numero = Number(prompt('Adicione um item'));
+        lista.push(numero);
+    }
+    return lista;
+};
+console.log(add());
+*/
+
+function conta(nome, sobrenome, ag, num, accoun) {
+    let saldo = 0;
+    return {
+        nome: nome,
+        sobrenome: sobrenome,
+        ag: ag,
+        num: num,
+        accoun: accoun,
+        limite: 1000,
+        deposit(valor) {
+            valor += saldo;
+        },
+        saque(valor) {
+            if (accoun === "cc") {
+                saldo += valor;
+            } else console.log("saque nao permitido");
+        },
+        get saldoAtual() {
+            return saldo;
+        },
+        get nomeCompleto() {
+            return `${this.nome} ${this.sobrenome}`;
+        },
+    }
 }
-
-
-total = 20;
-
-let i = (function() {
-    return total = 10 + 2;
-})();
-
-i(1, 3);
+conta1 = conta("jonas", "oliveira", 1234, 56789, "cc");
+conta1.deposit(500);
+conta1.saque(200);
+function infoConta() {
+    console.log(`titular: ${conta1.nomeCompleto}`);
+    console.log(`agencia: ${conta1.ag}`);
+    console.log(`numero: ${conta1.num}`);
+    console.log(`saldo atual: ${conta1.saldoAtual}`);
+};
+infoConta();
