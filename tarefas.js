@@ -241,6 +241,8 @@ function add() {
 console.log(add());
 */
 
+
+/*
 function conta(nome, sobrenome, ag, num, accoun) {
     let saldo = 0;
     return {
@@ -249,13 +251,14 @@ function conta(nome, sobrenome, ag, num, accoun) {
         ag: ag,
         num: num,
         accoun: accoun,
-        limite: 1000,
+        limite,
         deposit(valor) {
             valor += saldo;
         },
         saque(valor) {
             if (accoun === "cc") {
                 saldo += valor;
+                limite = 1000;
             } else console.log("saque nao permitido");
         },
         get saldoAtual() {
@@ -266,7 +269,7 @@ function conta(nome, sobrenome, ag, num, accoun) {
         },
     }
 }
-conta1 = conta("jonas", "oliveira", 1234, 56789, "cc");
+const conta1 = conta("jonas", "oliveira", 1234, 56789, "cc");
 conta1.deposit(500);
 conta1.saque(200);
 function infoConta() {
@@ -276,3 +279,12 @@ function infoConta() {
     console.log(`saldo atual: ${conta1.saldoAtual}`);
 };
 infoConta();
+*/
+
+function Tarefa(tirulo, descricao) {
+    let status = "pendente";
+
+}
+
+const t1 = new Tarefa("sudy")
+console.log(t1);
